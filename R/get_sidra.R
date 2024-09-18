@@ -213,7 +213,7 @@ get_sidra <- function(x,
     
     
     # Classificaoes e categorias (ou secoes)
-    if (is.null(classific) || classific == "all") {
+    if (is.null(classific) || (lenght(classific) == 1 & classific == "all") {
       
       if (!is.null(category)) {
         message("Considering all categories once 'classific' was set to 'all' (default)")
